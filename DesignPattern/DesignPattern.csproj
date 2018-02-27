@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E871058-C331-4689-A21E-686ABBB86CF3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="代理模式\DepartAssistant.cs" />
+    <Compile Include="代理模式\IDepartmentManager.cs" />
+    <Compile Include="代理模式\Minister.cs" />
+    <Compile Include="单例模式\Singleton.cs" />
+    <Compile Include="工厂模式\Database.cs" />
+    <Compile Include="工厂模式\DatabaseFactory.cs" />
+    <Compile Include="工厂模式\MySqlDatabase.cs" />
+    <Compile Include="工厂模式\OracleDatabase.cs" />
+    <Compile Include="工厂模式\SqlServerDatabase.cs" />
+    <Compile Include="建造者模式\Activity.cs" />
+    <Compile Include="建造者模式\Entertainment.cs" />
+    <Compile Include="建造者模式\EntertainmentBuilder.cs" />
+    <Compile Include="建造者模式\MaJiang.cs" />
+    <Compile Include="建造者模式\Pocker.cs" />
+    <Compile Include="建造者模式\Sing.cs" />
+    <Compile Include="抽象工厂模式\Car.cs" />
+    <Compile Include="抽象工厂模式\CarFactory.cs" />
+    <Compile Include="抽象工厂模式\Geep.cs" />
+    <Compile Include="抽象工厂模式\GZFactory.cs" />
+    <Compile Include="抽象工厂模式\GZGeep.cs" />
+    <Compile Include="抽象工厂模式\GZSuv.cs" />
+    <Compile Include="抽象工厂模式\GZTruck.cs" />
+    <Compile Include="抽象工厂模式\SHFactory.cs" />
+    <Compile Include="抽象工厂模式\SHGeep.cs" />
+    <Compile Include="抽象工厂模式\SHSuv.cs" />
+    <Compile Include="抽象工厂模式\SHTruck.cs" />
+    <Compile Include="抽象工厂模式\Suv.cs" />
+    <Compile Include="抽象工厂模式\Truck.cs" />
+    <Compile Include="模板方法模式\BossDaily.cs" />
+    <Compile Include="模板方法模式\Daily.cs" />
+    <Compile Include="模板方法模式\MyDaily.cs" />
+    <Compile Include="策略模式\Bus.cs" />
+    <Compile Include="策略模式\GoHome.cs" />
+    <Compile Include="策略模式\ITransportation.cs" />
+    <Compile Include="策略模式\Metro.cs" />
+    <Compile Include="策略模式\Walking.cs" />
+    <Compile Include="装饰模式\ColoredHairWoman.cs" />
+    <Compile Include="装饰模式\CommonWoman.cs" />
+    <Compile Include="装饰模式\LongLeggedWoman.cs" />
+    <Compile Include="装饰模式\PlentifulWoman.cs" />
+    <Compile Include="装饰模式\Woman.cs" />
+    <Compile Include="装饰模式\WomanDecorator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
